@@ -21,7 +21,7 @@ A two-sided booking system with:
 
 After submission, a confirmation screen shows the booking ID and pending status.
 
-### Admin / provider view
+### Admin
 - Stats dashboard (total bookings/pending/confirmed/cancelled)
 - Filterable, searchable table of all bookings
 - One-click status updates: confirm, cancel, or reopen bookings
