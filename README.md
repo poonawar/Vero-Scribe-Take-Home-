@@ -31,17 +31,17 @@ After submission, a confirmation screen shows the booking ID and pending status.
 
 ## Key technical & product decisions
 
-**React + Vite** Fast setup, no unnecessary complexity.
+**React + Vite:** Fast setup, no unnecessary complexity.
 
-**Mock data with realistic slot generation** Slots are generated at startup across 14 days, with 30% randomly removed to simulate real availability. Slots get marked when claimed, preventing double-booking within a session.
+**Mock data with realistic slot generation:** Slots are generated at startup across 14 days, with 30% randomly removed to simulate real availability. Slots get marked when claimed, preventing double-booking within a session.
 
-**No router** The app uses a "view" field in global state instead of URL routing. For this scope, it keeps things simple; in production, I'd use React Router so views are deep-linkable.
+**No router:** The app uses a "view" field in global state instead of URL routing. For this scope, it keeps things simple; in production, I'd use React Router so views are deep-linkable.
 
 ---
 
 ## What I'd improve with more time
 
-- **Real calendar UI** A proper month-grid calendar (e.g. react-day-picker) would feel more natural than the date list
-- **Email notifications** Trigger confirmation/cancellation emails when admin updates status
-- **Auth** Patients get a link to view/cancel their bookings; admins can log in with credentials
-- **URL routing** React Router, so views are separately linkable and the back button works intuitively
+- **Real calendar UI:** A proper month-grid calendar (e.g. react-day-picker) would feel more natural than the date list
+- **Email notifications:** Trigger confirmation/cancellation emails when admin updates status
+- **Auth:** Patients get a link to view/cancel their bookings; admins can log in with credentials
+- **URL routing:** React Router, so views are separately linkable and the back button works intuitively
