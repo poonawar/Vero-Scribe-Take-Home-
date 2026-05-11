@@ -35,7 +35,7 @@ After submission, a confirmation screen shows the booking ID and pending status.
 
 **Mock data with realistic slot generation:** Slots are generated at startup across 14 days, with 30% randomly removed to simulate real availability. Slots get marked when claimed, preventing double-booking within a session.
 
-**No router:** The app uses a "view" field in global state instead of URL routing. For this scope, it keeps things simple; in production, I'd use React Router so views are deep-linkable.
+**No router:** The app uses a "view" field in global state instead of URL routing. For this scope, it keeps things simple.
 
 ---
 
