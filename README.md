@@ -15,9 +15,9 @@ Then open [http://localhost:5173](http://localhost:5173) and book your "appointm
 A two-sided booking system with:
 
 ### Patient view (3 steps)
-1. **Choose a physician** Browse providers by specialty and see who's available
-2. **Select a time slot** Showing real available slots (mock data with randomized availability across 2 weeks)
-3. **Patient details form** Name, DOB, contact info, reason for visit and notes
+- **Choose a physician:** Browse providers by specialty and see who's available
+- **Select a time slot:** Showing real available slots (mock data with randomized availability across 2 weeks)
+- **Patient details form:** Name, DOB, contact info, reason for visit and notes
 
 After submission, a confirmation screen shows the booking ID and pending status.
 
@@ -35,7 +35,7 @@ After submission, a confirmation screen shows the booking ID and pending status.
 
 **Mock data with realistic slot generation** Slots are generated at startup across 14 days, with 30% randomly removed to simulate real availability. Slots get marked when claimed, preventing double-booking within a session.
 
-**No router** The app uses a "view" field in global state instead of URL routing. For this scope it keeps things simple; in production I'd use React Router so views are deep-linkable.
+**No router** The app uses a "view" field in global state instead of URL routing. For this scope, it keeps things simple; in production, I'd use React Router so views are deep-linkable.
 
 ---
 
@@ -44,4 +44,4 @@ After submission, a confirmation screen shows the booking ID and pending status.
 - **Real calendar UI** A proper month-grid calendar (e.g. react-day-picker) would feel more natural than the date list
 - **Email notifications** Trigger confirmation/cancellation emails when admin updates status
 - **Auth** Patients get a link to view/cancel their bookings; admins can log in with credentials
-- **URL routing** React Router so views are separately linkable and the back button works intuitively
+- **URL routing** React Router, so views are separately linkable and the back button works intuitively
