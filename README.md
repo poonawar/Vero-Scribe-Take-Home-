@@ -6,7 +6,7 @@ A patient appointment booking flow built with React and Vite.
 
 bash\
 npm install\
-npm run dev\
+npm run dev
 
 Then open [http://localhost:5173](http://localhost:5173) and book your "appointment".
 
